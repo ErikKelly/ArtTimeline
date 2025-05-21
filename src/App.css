@@ -86,3 +86,7 @@ button.toggleType.selected{
   padding-right: .5em;
   color: #700101;
 }
+
+span.rc-slider-mark-text{
+  font-size: 1.4em;
+}

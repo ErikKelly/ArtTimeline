@@ -7,7 +7,6 @@ import Picker from "./components/Picker";
 import painting from "./assets/paintings.json";
 import sculpture from "./assets/sculpture.json";
 import history from "./assets/history.json";
-import moulding from "./assets/moulding.png";
 
 function App() {
   const artworkData = {
@@ -41,7 +40,7 @@ function App() {
 
         <div>
           Explore how art evolved decade by decade through artworks on display
-          at The Museum in New York City.
+          at The Metropolitian Museum of Art in New York City.
         </div>
 
         <div className="artNav">

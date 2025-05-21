@@ -30,7 +30,7 @@ export default function Timeline({ startYear, onChange }) {
           height: 20,
           width: 20,
           marginTop: -5,
-          backgroundColor: "red",
+          backgroundColor: "#eacaca",
         }}
       />
     </div>
