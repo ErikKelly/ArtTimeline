@@ -6,19 +6,25 @@
   text-align: center;
 }
 
-.timelineTitle, select {
-  border: none;
+.timelineTitle {
   color: #700101;
-  font-family: 'Cormorant Upright', system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-size: 3rem; 
   font-weight: 700; 
   line-height: 1.2; 
 }
 
-select { text-align-last: right; }
-
+select {
+  font-family: 'Cormorant Upright', system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
 .slider {
-  padding-bottom: 50px;
+  padding-bottom: 30px;
+}
+
+.artNav {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .cards {
@@ -56,4 +62,27 @@ select { text-align-last: right; }
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.typeToggler{
+  padding: 1em;
+}
+
+button.toggleType{
+  border: 1px solid #700101;
+  margin: 5px;
+}
+
+button.toggleType.selected{
+  color: #700101;
+  background-color: #FFF;
+  font-weight: 800;
+}
+
+.dateRange{
+  font-weight: 800;
+  font-size: 1.5em;
+  padding-left: .5em;
+  padding-right: .5em;
+  color: #700101;
 }

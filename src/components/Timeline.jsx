@@ -15,9 +15,6 @@ const marks = {
 export default function Timeline({ startYear, onChange }) {
   return (
     <div className="slider">
-      <h2>
-        {startYear} - {startYear + 9}
-      </h2>
       <Slider
         min={1300}
         max={1890}

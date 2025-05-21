@@ -7,6 +7,7 @@ import Picker from "./components/Picker";
 import painting from "./assets/paintings.json";
 import sculpture from "./assets/sculpture.json";
 import history from "./assets/history.json";
+import moulding from "./assets/moulding.png";
 
 function App() {
   const artworkData = {
@@ -33,18 +34,32 @@ function App() {
 
   return (
     <>
-      <h1>
-        <div className="timelineTitle">
-          <Picker options={options} onChange={handleValueChange} /> Timeline
+      <div className="appContainer">
+        <h1>
+          <div className="timelineTitle">Art Timeline 1600 - 1899</div>
+        </h1>
+
+        <div>
+          Explore how art evolved decade by decade through artworks on display
+          at The Museum in New York City.
         </div>
-      </h1>
-      <div>
-        See how art evolved from decade to decade by comparing artworks on
-        display at The Metropolitian Museum of Art in New York City.
+
+        <div className="artNav">
+          <div className="typeToggler">
+            <Picker
+              options={options}
+              onChange={handleValueChange}
+              startYear={value}
+            />
+          </div>
+
+          <Timeline startYear={value} onChange={OnChangeEventTriggerd} />
+        </div>
+        <div className="content">
+          <History startYear={value} historyData={history} />
+          <Artworks startYear={value} artworkData={selectedData} />
+        </div>
       </div>
-      <Timeline startYear={value} onChange={OnChangeEventTriggerd} />
-      <History startYear={value} historyData={history} />
-      <Artworks startYear={value} artworkData={selectedData} />
     </>
   );
 }
