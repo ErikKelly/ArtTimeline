@@ -65,7 +65,8 @@ select {
 }
 
 .typeToggler{
-  padding: 1em;
+  padding-top: 1em;
+  padding-bottom: .5em;
 }
 
 button.toggleType{
@@ -89,4 +90,30 @@ button.toggleType.selected{
 
 span.rc-slider-mark-text{
   font-size: 1.4em;
+}
+
+
+@media only screen and (max-width: 768px) {
+  #root {
+    padding: 1em;
+  }
+  .timelineTitle {
+    font-size: 25px;
+  }
+  .description {
+    font-size: 16px;
+  }
+  .typeToggler .dateRange {
+    font-size: 20px;
+  }
+  .typeToggler button.toggleType {
+    font-size: 16px;
+    padding: 10px;
+  }
+  .slick-slider {
+    font-size: 16px;
+  }
+  button.card {
+    padding: 0;
+  }
 }

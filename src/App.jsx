@@ -38,9 +38,9 @@ function App() {
           <div className="timelineTitle">Art Timeline 1600 - 1899</div>
         </h1>
 
-        <div>
+        <div className="description">
           Explore how art evolved decade by decade through artworks on display
-          at The Metropolitian Museum of Art in New York City.
+          at The Metropolitian Museum of Art.
         </div>
 
         <div className="artNav">

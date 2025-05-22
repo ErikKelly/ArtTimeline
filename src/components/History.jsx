@@ -9,7 +9,7 @@ export default function Artworks({ startYear, historyData }) {
     slidesToShow: 1,
     slidesToScroll: 1,
     infinite: true,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 8000,
   };
 
