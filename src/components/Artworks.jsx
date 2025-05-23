@@ -1,5 +1,5 @@
 import { useState } from "react";
-import data from "../assets/sculpture.json";
+import LazyImage from "./LazyImage";
 
 export default function Artworks({ startYear, artworkData }) {
   const sortedByName = [...artworkData].sort((a, b) =>
@@ -46,10 +46,11 @@ export default function Artworks({ startYear, artworkData }) {
                   flipped[item.objectID] ? "flipped" : ""
                 }`}
               >
-                <img
+                <LazyImage
                   src={item.primaryImageSmall}
                   alt={item.title || "Untitled"}
-                  loading="lazy"
+                  className="lazyImage"
+                  style={{ width: "100%", height: "100%" }}
                 />
               </div>
 
