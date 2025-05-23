@@ -14,6 +14,7 @@ function Picker({ options, onChange, startYear }) {
       <button
         className={`toggleType ${value === "Painting" ? "selected" : ""}`}
         key="Painting"
+        type="button"
         onClick={() => handleChange("Painting")}
       >
         Paintings
@@ -24,6 +25,7 @@ function Picker({ options, onChange, startYear }) {
       <button
         className={`toggleType ${value === "Sculpture" ? "selected" : ""}`}
         key="Sculpture"
+        type="button"
         onClick={() => handleChange("Sculpture")}
       >
         Sculpture

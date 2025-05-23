@@ -1,7 +1,7 @@
 import { useState } from "react";
 import data from "../assets/sculpture.json";
 
-export default function ArtworksJson({ startYear, artworkData }) {
+export default function Artworks({ startYear, artworkData }) {
   const sortedByName = [...artworkData].sort((a, b) =>
     (a.artistDisplayName || "").localeCompare(b.artistDisplayName || "")
   );
@@ -38,6 +38,7 @@ export default function ArtworksJson({ startYear, artworkData }) {
             <button
               className="card"
               key={item.objectID}
+              type="button"
               onClick={() => handleCardFlip(item.objectID)}
             >
               <div

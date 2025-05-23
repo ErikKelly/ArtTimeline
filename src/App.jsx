@@ -8,14 +8,15 @@ import painting from "./assets/paintings.json";
 import sculpture from "./assets/sculpture.json";
 import history from "./assets/history.json";
 
-function App() {
-  const artworkData = {
-    Painting: painting,
-    Sculpture: sculpture,
-  };
+const artworkData = {
+  Painting: painting,
+  Sculpture: sculpture,
+};
 
+const options = ["Painting", "Sculpture"];
+
+function App() {
   //picker
-  const options = ["Painting", "Sculpture"];
   const [selectedType, setSelectedType] = useState("Painting");
 
   const handleValueChange = (newValue) => {
@@ -27,7 +28,7 @@ function App() {
   // slider
   const [value, setValue] = useState(1600);
 
-  const OnChangeEventTriggerd = (newValue) => {
+  const onChangeEventTriggerd = (newValue) => {
     setValue(newValue);
   };
 
@@ -52,7 +53,7 @@ function App() {
             />
           </div>
 
-          <Timeline startYear={value} onChange={OnChangeEventTriggerd} />
+          <Timeline startYear={value} onChange={onChangeEventTriggerd} />
         </div>
         <div className="content">
           <History startYear={value} historyData={history} />

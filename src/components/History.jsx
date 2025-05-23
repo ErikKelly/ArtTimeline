@@ -5,11 +5,11 @@ import "slick-carousel/slick/slick-theme.css";
 export default function Artworks({ startYear, historyData }) {
   const settings = {
     dots: true,
-    speed: 2000,
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
     infinite: true,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 8000,
   };
 
